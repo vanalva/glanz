@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Búsqueda de Inmuebles | Glanz · Inmobiliaria Boutique Madrid</title>
+  <meta name="description" content="Resultados de búsqueda de inmuebles en Madrid. Filtre por distrito, tipo de inmueble y rango de precio. Glanz selecciona residencias extraordinarias.">
+  <link rel="canonical" href="https://www.glanz.es/search">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Búsqueda de Inmuebles | Glanz · Madrid">
+  <meta property="og:description" content="Encuentre su residencia ideal entre los inmuebles más seleccionados de Madrid.">
+  <meta property="og:url" content="https://www.glanz.es/search">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="css/variables.css" rel="stylesheet" type="text/css">
+  <link href="css/framework.css" rel="stylesheet" type="text/css">
+  <link href="css/project.css" rel="stylesheet" type="text/css">
+</head>
+<body class="u-theme-light">
+<a href="#main-content" class="u-sr-only">Ir al contenido principal</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "WebSite"],
+  "name": "Glanz",
+  "url": "https://www.glanz.es",
+  "logo": { "@type": "ImageObject", "url": "https://www.glanz.es/assets/logo.svg" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": { "@type": "EntryPoint", "urlTemplate": "https://www.glanz.es/search?q={search_term_string}" },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Búsqueda de Inmuebles",
+  "description": "Resultados de búsqueda de inmuebles en Madrid. Filtre por distrito, tipo y precio.",
+  "url": "https://www.glanz.es/search",
+  "inLanguage": "es",
+  "isPartOf": { "@type": "WebSite", "url": "https://www.glanz.es" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.glanz.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Búsqueda", "item": "https://www.glanz.es/search" }
+    ]
+  },
+  "datePublished": "2026-05-06",
+  "dateModified": "2026-05-06"
+}
+</script>
+
+<div class="page_wrap">
+
+  <!-- ── NAV ─────────────────────────────────────────── -->
+    <div class="glanz_nav">
+    <header class="glanz_landing_top">
+      <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
+        <img src="assets/logo.svg" alt="Glanz Logo">
+      </a>
+      <nav class="glanz_landing_nav" aria-label="Navegación principal">
+        <div class="glanz_landing_nav_links">
+          <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
+          <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
+          <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
+          <a href="lujo-en-madrid.html" class="glanz_landing_nav_link">Editorial</a>
+        </div>
+        <button type="button" class="glanz_landing_nav_burger" aria-label="Abrir menú">
+          <span class="glanz_burger_bar"></span>
+          <span class="glanz_burger_bar"></span>
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <!-- ── MAIN ─────────────────────────────────────────── -->
+  <main id="main-content" role="main" class="glanz_page_main">
+
+    <!-- ── 01 // CONSULTA ──────────────────────────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight">01 // Consulta</p>
+        <h1 class="u-text-style-h2 u-margin-top-3">Resultados de búsqueda</h1>
+        <p class="u-text-style-main u-margin-top-3" style="max-width: 42rem; color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Mostramos inmuebles, distritos y artículos que coinciden con su consulta. Puede refinar o quitar filtros en cualquier momento.</p>
+
+        <div class="u-margin-top-6">
+          <label class="u-sr-only" for="search-q">Texto de búsqueda</label>
+          <input type="search" id="search-q" name="q" value="ático salamanca terraza" class="glanz_search_query_input" aria-label="Texto de búsqueda" autocomplete="off">
+        </div>
+
+        <div class="glanz_search_active_chips" aria-label="Filtros activos">
+          <button type="button" class="glanz_search_chip" aria-label="Quitar filtro: Ático">
+            Ático <span class="glanz_search_chip_x" aria-hidden="true">×</span>
+          </button>
+          <button type="button" class="glanz_search_chip" aria-label="Quitar filtro: Salamanca">
+            Salamanca <span class="glanz_search_chip_x" aria-hidden="true">×</span>
+          </button>
+          <button type="button" class="glanz_search_chip" aria-label="Quitar filtro: Terraza">
+            Terraza <span class="glanz_search_chip_x" aria-hidden="true">×</span>
+          </button>
+          <span class="u-text-style-small" style="opacity: 0.45;">·</span>
+          <button type="button" class="glanz_tag u-text-style-small u-text-transform-uppercase">Limpiar todo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 02 // RESULTADOS ──────────────────────────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; row-gap: var(--_spacing---space--3);">
+          <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight">02 // Resultados · <span style="opacity: 0.55;">12 encontrados · ordenados por relevancia</span></p>
+          <div style="display: flex; flex-direction: row; align-items: center; column-gap: var(--_spacing---space--2);">
+            <span class="u-text-style-small" style="opacity: 0.55;">Ordenar por</span>
+            <button type="button" class="glanz_tag u-text-style-small u-text-transform-uppercase" aria-haspopup="listbox">Relevancia ▾</button>
+          </div>
+        </div>
+
+        <div class="glanz_search_results_grid u-margin-top-5">
+
+          <a href="detail_inmuebles.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Ático con terraza en Ortega y Gasset, Salamanca" class="image_cover" loading="lazy" width="600" height="750">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Inmueble</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Ático Ortega y Gasset</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Salamanca · 4 dorm. · 280 m² · terraza 45 m²</p>
+              <p class="u-text-style-main u-weight-bold">6.850.000 €</p>
+            </div>
+          </a>
+
+          <a href="detail_inmuebles.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Dúplex en Jorge Juan, Salamanca" class="image_cover" loading="lazy" width="600" height="750">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Inmueble</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Dúplex en Jorge Juan</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Salamanca · 3 dorm. · 190 m² · terraza 30 m²</p>
+              <p class="u-text-style-main u-weight-bold">3.200.000 €</p>
+            </div>
+          </a>
+
+          <a href="detail_distritos.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-3">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Distrito Salamanca, Madrid" class="image_cover" loading="lazy" width="600" height="450">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Distrito</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Salamanca</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Milla de Oro, Recoletos, Goya y el pulso comercial de la ciudad.</p>
+              <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight" style="color: var(--swatch--brand-500); margin-top: auto;">Ver ficha de distrito →</p>
+            </div>
+          </a>
+
+          <a href="detail_blog-posts.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-3-2">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-28.jpg" alt="Terrazas en Salamanca" class="image_cover" loading="lazy" width="600" height="400">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Editorial</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Terrazas que marcan el carácter de Salamanca</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">6 min lectura · Lujo en Madrid</p>
+            </div>
+          </a>
+
+          <a href="detail_inmuebles.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/cocina-americana-plano-general.png" alt="Ático en Castelló, Salamanca" class="image_cover" loading="lazy" width="600" height="750">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Inmueble</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Ático en Castelló</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Salamanca · 5 dorm. · 310 m² · terraza 55 m²</p>
+              <p class="u-text-style-main u-weight-bold">4.950.000 €</p>
+            </div>
+          </a>
+
+          <a href="detail_barrios.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-3">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Barrio Recoletos" class="image_cover" loading="lazy" width="600" height="450">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Barrio</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Recoletos</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Barrio dentro de Salamanca · calles señoriales y silencio selecto.</p>
+              <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight" style="color: var(--swatch--brand-500); margin-top: auto;">Ver ficha de barrio →</p>
+            </div>
+          </a>
+
+          <a href="detail_blog-posts.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-3-2">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Terrazas en Chamberí" class="image_cover" loading="lazy" width="600" height="400">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Editorial</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Chamberí: terrazas que no renuncian al silencio</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">5 min lectura · Lujo en Madrid</p>
+            </div>
+          </a>
+
+          <a href="detail_inmuebles.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Piso en Velázquez" class="image_cover" loading="lazy" width="600" height="750">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Inmueble</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Piso en Velázquez</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Salamanca · 3 dorm. · 165 m² · terraza 18 m²</p>
+              <p class="u-text-style-main u-weight-bold">2.100.000 €</p>
+            </div>
+          </a>
+
+          <a href="detail_inmuebles.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-28.jpg" alt="Ático con piscina en Serrano" class="image_cover" loading="lazy" width="600" height="750">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Inmueble</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Ático con piscina en Serrano</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Salamanca · 4 dorm. · 360 m² · terraza 70 m²</p>
+              <p class="u-text-style-main u-weight-bold">8.200.000 €</p>
+            </div>
+          </a>
+
+          <a href="detail_blog-posts.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-3-2">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Guía de áticos en Madrid" class="image_cover" loading="lazy" width="600" height="400">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Editorial</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Guía breve de áticos en Madrid</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">8 min lectura · Lujo en Madrid</p>
+            </div>
+          </a>
+
+          <a href="detail_barrios.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-3">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Barrio Lista, Salamanca" class="image_cover" loading="lazy" width="600" height="450">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Barrio</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Lista</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Salamanca · comercio tranquilo y edificios bien conservados.</p>
+              <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight" style="color: var(--swatch--brand-500); margin-top: auto;">Ver ficha de barrio →</p>
+            </div>
+          </a>
+
+          <a href="detail_inmuebles.html" class="glanz_search_result_card">
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Loft con terraza en Almagro" class="image_cover" loading="lazy" width="600" height="750">
+            </div>
+            <div class="glanz_search_result_body">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Inmueble</span>
+              <h2 class="u-text-style-h5 u-margin-top-2">Loft con terraza en Almagro</h2>
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Chamberí · 2 dorm. · 140 m² · terraza 25 m²</p>
+              <p class="u-text-style-main u-weight-bold">1.890.000 €</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 03 // SIN RESULTADOS (estado vacío) ──────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight">03 // Variante sin resultados</p>
+        <div class="glanz_search_empty u-margin-top-5">
+          <h2 class="u-text-style-h4">No hay resultados para su búsqueda.</h2>
+          <p class="u-text-style-main u-margin-top-3" style="max-width: 42rem; color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">Pruebe a ampliar el distrito, quitar un filtro o utilizar una palabra más general. También puede consultar estas búsquedas frecuentes:</p>
+          <div class="glanz_search_suggest_list">
+            <a href="search.html" class="glanz_suggest_link">ático reformado chamberí</a>
+            <a href="search.html" class="glanz_suggest_link">piso jerónimos terraza</a>
+            <a href="search.html" class="glanz_suggest_link">obra nueva castellana</a>
+          </div>
+          <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-top-6">Artículos recientes</p>
+          <ul style="margin-top: var(--_spacing---space--3); display: flex; flex-direction: column; row-gap: var(--_spacing---space--2);" role="list">
+            <li><a href="detail_blog-posts.html" class="u-text-style-small" style="color: var(--_theme---text);">Cómo leer una tasación en Madrid · <span style="opacity: 0.55;">Lujo en Madrid</span></a></li>
+            <li><a href="detail_blog-posts.html" class="u-text-style-small" style="color: var(--_theme---text);">Retiro: vida entre parques y edificios históricos · <span style="opacity: 0.55;">Lujo en Madrid</span></a></li>
+            <li><a href="detail_blog-posts.html" class="u-text-style-small" style="color: var(--_theme---text);">Alquiler de temporada: lo que cambia en 2026 · <span style="opacity: 0.55;">Lujo en Madrid</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="glanz_footer" role="contentinfo">
+    <div class="u-section">
+      <div class="u-container-full">
+        <div class="glanz_footer_top">
+          <div>
+            <a href="index.html" aria-label="Glanz — inicio">
+              <img src="assets/logo.svg" alt="Glanz" width="80" height="26" loading="lazy">
+            </a>
+            <p class="u-text-style-small u-margin-top-4" style="opacity: 0.7; max-width: 22rem; line-height: 1.6;">Inmobiliaria boutique · Madrid.<br>Calle de Serrano 00, 28001.<br>L–V 10:00–19:00.</p>
+          </div>
+          <div>
+            <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-3" style="opacity: 0.5;">Navegar</p>
+            <nav class="glanz_footer_links" aria-label="Navegación del pie">
+              <a href="inmuebles.html" class="glanz_footer_link u-text-style-small">Inmuebles</a>
+              <a href="detail_distritos.html" class="glanz_footer_link u-text-style-small">Distritos</a>
+              <a href="boutique-inmobiliaria.html" class="glanz_footer_link u-text-style-small">Boutique</a>
+              <a href="club-glanz.html" class="glanz_footer_link u-text-style-small">Club Glanz</a>
+              <a href="lujo-en-madrid.html" class="glanz_footer_link u-text-style-small">Editorial</a>
+            </nav>
+          </div>
+          <div>
+            <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-3" style="opacity: 0.5;">Servicios</p>
+            <nav class="glanz_footer_links" aria-label="Servicios">
+              <a href="detail_tipo-de-busqueda.html" class="glanz_footer_link u-text-style-small">Compra</a>
+              <a href="vender-piso-madrid.html" class="glanz_footer_link u-text-style-small">Venta</a>
+              <a href="inmuebles.html" class="glanz_footer_link u-text-style-small">Alquiler</a>
+              <a href="detail_product.html" class="glanz_footer_link u-text-style-small">Personal Shopper</a>
+              <a href="vender-piso-madrid.html" class="glanz_footer_link u-text-style-small">Vender mi piso</a>
+            </nav>
+          </div>
+          <div>
+            <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-3" style="opacity: 0.5;">Contacto</p>
+            <nav class="glanz_footer_links" aria-label="Contacto">
+              <a href="mailto:hola@glanz.es" class="glanz_footer_link u-text-style-small">hola@glanz.es</a>
+              <a href="tel:+34910000000" class="glanz_footer_link u-text-style-small">+34 910 000 000</a>
+              <a href="https://www.instagram.com/" class="glanz_footer_link u-text-style-small" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.linkedin.com/" class="glanz_footer_link u-text-style-small" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+          </div>
+        </div>
+        <div class="glanz_footer_bottom">
+          <span class="u-text-style-small">© 2026 Glanz · Todos los derechos reservados</span>
+          <div class="glanz_footer_bottom_links">
+            <a href="politicas.html#aviso-legal" class="glanz_footer_bottom_link u-text-style-small">Políticas</a>
+            <a href="politicas.html#cookies" class="glanz_footer_bottom_link u-text-style-small">Cookies</a>
+          </div>
+          <span class="u-text-style-small">Diseño por Van Alva</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── SEARCH DOCK ────────────────────────────────────── -->
+    <form class="glanz_landing_search" method="get" action="search.html" data-sticky-trigger>
+    <label class="glanz_landing_search_field is-search">
+      <span class="glanz_landing_search_icon" aria-hidden="true">⌕</span>
+      <input type="search" name="q" placeholder="Encuentra tu hogar" aria-label="Buscar" class="glanz_landing_search_input">
+    </label>
+    <span class="glanz_landing_search_divider" aria-hidden="true"></span>
+    <button type="button" class="glanz_landing_search_field" aria-haspopup="listbox">
+      <span class="glanz_landing_search_label">Distrito</span>
+      <span class="glanz_landing_search_chev" aria-hidden="true">▾</span>
+    </button>
+    <span class="glanz_landing_search_divider is-collapsable" aria-hidden="true"></span>
+    <button type="button" class="glanz_landing_search_field is-collapsable" aria-haspopup="listbox">
+      <span class="glanz_landing_search_label">Tipo</span>
+      <span class="glanz_landing_search_chev" aria-hidden="true">▾</span>
+    </button>
+    <span class="glanz_landing_search_divider is-collapsable" aria-hidden="true"></span>
+    <button type="button" class="glanz_landing_search_field is-collapsable" aria-haspopup="listbox">
+      <span class="glanz_landing_search_label">Dormitorios</span>
+      <span class="glanz_landing_search_chev" aria-hidden="true">▾</span>
+    </button>
+    <span class="glanz_landing_search_divider is-collapsable" aria-hidden="true"></span>
+    <div class="glanz_landing_search_range is-collapsable">
+      <span class="glanz_landing_search_label">Rango</span>
+      <span class="glanz_landing_search_range_min">500 k €</span>
+      <span class="glanz_landing_search_range_line" aria-hidden="true">
+        <span class="glanz_landing_search_range_thumb" aria-hidden="true"></span>
+      </span>
+      <span class="glanz_landing_search_range_max">5 M+ €</span>
+    </div>
+    <button type="button" class="glanz_landing_search_expand" aria-label="Mostrar filtros" data-expand-trigger>
+      <span class="glanz_landing_search_expand_icon" aria-hidden="true">⊕</span>
+    </button>
+    <button type="submit" class="glanz_landing_search_submit" aria-label="Buscar">
+      <span aria-hidden="true">→</span>
+    </button>
+  </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pago Seguro · Personal Shopper Premium | Glanz Madrid</title>
+  <meta name="description" content="Contrate el servicio Personal Shopper Premium de Glanz de forma segura. Pago por PayPal o transferencia bancaria. Tarifa fija 9.900 € IVA incluido.">
+  <link rel="canonical" href="https://www.glanz.es/checkout">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="css/variables.css" rel="stylesheet" type="text/css">
+  <link href="css/framework.css" rel="stylesheet" type="text/css">
+  <link href="css/project.css" rel="stylesheet" type="text/css">
+</head>
+<body class="u-theme-light">
+<a href="#main-content" class="u-sr-only">Ir al contenido principal</a>
+
+<div class="page_wrap">
+
+    <div class="glanz_nav">
+    <header class="glanz_landing_top">
+      <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
+        <img src="assets/logo.svg" alt="Glanz Logo">
+      </a>
+      <nav class="glanz_landing_nav" aria-label="Navegación principal">
+        <div class="glanz_landing_nav_links">
+          <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
+          <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
+          <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
+          <a href="lujo-en-madrid.html" class="glanz_landing_nav_link">Editorial</a>
+        </div>
+        <button type="button" class="glanz_landing_nav_burger" aria-label="Abrir menú">
+          <span class="glanz_burger_bar"></span>
+          <span class="glanz_burger_bar"></span>
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <main id="main-content" role="main" class="glanz_page_main">
+
+    <section class="u-section">
+      <div class="u-container-full">
+        <nav aria-label="Ruta de navegación" class="u-margin-bottom-5">
+          <ol class="glanz_breadcrumb">
+            <li><a href="index.html" class="glanz_footer_link u-text-style-small">Inicio</a></li>
+            <li><span aria-hidden="true" class="u-text-style-small" style="opacity: 0.4;"> / </span><a href="detail_product.html" class="glanz_footer_link u-text-style-small">Personal Shopper</a></li>
+            <li><span aria-hidden="true" class="u-text-style-small" style="opacity: 0.4;"> / </span><span class="u-text-style-small" aria-current="page">Pago</span></li>
+          </ol>
+        </nav>
+
+        <div class="glanz_checkout_layout">
+
+          <!-- Formulario -->
+          <section class="glanz_checkout_form" aria-label="Datos de facturación">
+            <h1 class="u-text-style-h4 u-margin-bottom-5">Datos de facturación</h1>
+
+            <form action="order-confirmation.html" method="get" novalidate>
+              <div class="glanz_form_row">
+                <div class="glanz_form_field">
+                  <label class="glanz_form_label u-text-style-small" for="checkout-nombre">Nombre</label>
+                  <input type="text" id="checkout-nombre" name="nombre" class="glanz_input u-text-style-small" placeholder="Juan" autocomplete="given-name" required>
+                </div>
+                <div class="glanz_form_field">
+                  <label class="glanz_form_label u-text-style-small" for="checkout-apellidos">Apellidos</label>
+                  <input type="text" id="checkout-apellidos" name="apellidos" class="glanz_input u-text-style-small" placeholder="García López" autocomplete="family-name" required>
+                </div>
+              </div>
+
+              <div class="glanz_form_field u-margin-top-4">
+                <label class="glanz_form_label u-text-style-small" for="checkout-email">Correo electrónico</label>
+                <input type="email" id="checkout-email" name="email" class="glanz_input u-text-style-small" placeholder="juan@ejemplo.es" autocomplete="email" required>
+              </div>
+
+              <div class="glanz_form_field u-margin-top-4">
+                <label class="glanz_form_label u-text-style-small" for="checkout-telefono">Teléfono</label>
+                <input type="tel" id="checkout-telefono" name="telefono" class="glanz_input u-text-style-small" placeholder="+34 600 000 000" autocomplete="tel" required>
+              </div>
+
+              <div class="glanz_form_field u-margin-top-4">
+                <label class="glanz_form_label u-text-style-small" for="checkout-nif">NIF / NIE / CIF</label>
+                <input type="text" id="checkout-nif" name="nif" class="glanz_input u-text-style-small" placeholder="00000000X" required>
+              </div>
+
+              <div class="glanz_form_field u-margin-top-4">
+                <label class="glanz_form_label u-text-style-small" for="checkout-direccion">Dirección de facturación</label>
+                <input type="text" id="checkout-direccion" name="direccion" class="glanz_input u-text-style-small" placeholder="Calle, número, piso…" autocomplete="street-address" required>
+              </div>
+
+              <div class="glanz_form_row u-margin-top-4">
+                <div class="glanz_form_field">
+                  <label class="glanz_form_label u-text-style-small" for="checkout-cp">Código postal</label>
+                  <input type="text" id="checkout-cp" name="cp" class="glanz_input u-text-style-small" placeholder="28001" autocomplete="postal-code" required>
+                </div>
+                <div class="glanz_form_field">
+                  <label class="glanz_form_label u-text-style-small" for="checkout-ciudad">Ciudad</label>
+                  <input type="text" id="checkout-ciudad" name="ciudad" class="glanz_input u-text-style-small" placeholder="Madrid" autocomplete="address-level2" required>
+                </div>
+              </div>
+
+              <div class="glanz_form_field u-margin-top-4">
+                <label class="glanz_form_label u-text-style-small" for="checkout-brief">¿Qué inmueble busca? (resumen breve)</label>
+                <textarea id="checkout-brief" name="brief" class="glanz_textarea u-text-style-small" rows="3" placeholder="Eje: Piso 150–200 m² en Salamanca o Chamberí, 3 dormitorios, hasta 2,5 M€. Plazo: antes de septiembre."></textarea>
+              </div>
+
+              <h2 class="u-text-style-h6 u-margin-top-6 u-margin-bottom-4">Método de pago</h2>
+
+              <div class="glanz_payment_methods">
+                <label class="glanz_payment_option">
+                  <input type="radio" name="pago" value="paypal" checked>
+                  <span class="glanz_payment_label u-text-style-small">PayPal — pago inmediato</span>
+                </label>
+                <label class="glanz_payment_option">
+                  <input type="radio" name="pago" value="transferencia">
+                  <span class="glanz_payment_label u-text-style-small">Transferencia bancaria — 24–48h hábiles</span>
+                </label>
+              </div>
+
+              <p class="u-text-style-small u-margin-top-4" style="color: color-mix(in srgb, var(--_theme---text) 55%, transparent);">Al confirmar acepta los <a href="politicas.html#terminos-uso" class="glanz_footer_link">Términos de uso</a> y la <a href="politicas.html#privacidad" class="glanz_footer_link">Política de privacidad</a> de Glanz.</p>
+
+              <button type="submit" class="glanz_nav_action_filled u-margin-top-5" style="width: 100%; justify-content: center; padding-top: 1rem; padding-bottom: 1rem;">Confirmar y pagar 9.900 €</button>
+            </form>
+          </section>
+
+          <!-- Resumen del pedido -->
+          <aside class="glanz_order_summary" aria-label="Resumen del pedido">
+            <h2 class="u-text-style-h5 u-margin-bottom-4">Resumen</h2>
+
+            <div class="glanz_pd_edificio_body" style="background-color: var(--_theme---background-2); border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem; padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 1.5rem; padding-right: 1.5rem;">
+              <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight" style="opacity: 0.5;">Servicio contratado</p>
+              <h3 class="u-text-style-h5 u-margin-top-2">Personal Shopper Premium</h3>
+              <p class="u-text-style-small u-margin-top-2" style="opacity: 0.6;">Búsqueda 60 días · Negociación incluida · Coordinación notaría · Seguimiento 12 meses</p>
+
+              <div class="glanz_pd_specs_row u-margin-top-4">
+                <div class="glanz_pd_spec">
+                  <span class="glanz_pd_spec_label">Subtotal</span>
+                  <span class="u-text-style-small u-weight-bold">8.182,64 €</span>
+                </div>
+                <div class="glanz_pd_spec">
+                  <span class="glanz_pd_spec_label">IVA (21%)</span>
+                  <span class="u-text-style-small u-weight-bold">1.718,36 €</span>
+                </div>
+              </div>
+
+              <div class="u-margin-top-4" style="border-top-width: 1px; border-top-style: solid; border-top-color: var(--_theme---border); padding-top: 1rem;">
+                <div class="glanz_pd_spec">
+                  <span class="glanz_pd_spec_label u-text-style-main u-weight-bold">Total</span>
+                  <span class="u-text-style-h5">9.900 €</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="u-margin-top-5">
+              <p class="u-text-style-small u-weight-bold u-margin-bottom-2">Incluye</p>
+              <ul class="glanz_footer_links">
+                <li class="u-text-style-small" style="opacity: 0.75;">Briefing inicial (2 horas)</li>
+                <li class="u-text-style-small" style="opacity: 0.75;">Búsqueda activa 60 días</li>
+                <li class="u-text-style-small" style="opacity: 0.75;">Candidatos ilimitados</li>
+                <li class="u-text-style-small" style="opacity: 0.75;">Visitas sin límite</li>
+                <li class="u-text-style-small" style="opacity: 0.75;">Negociación completa</li>
+                <li class="u-text-style-small" style="opacity: 0.75;">Coordinación notaría</li>
+                <li class="u-text-style-small" style="opacity: 0.75;">Seguimiento post-firma 12 m.</li>
+              </ul>
+            </div>
+
+            <div class="u-margin-top-5">
+              <p class="u-text-style-small" style="color: color-mix(in srgb, var(--_theme---text) 60%, transparent);">¿Prefiere el plan Básico? <a href="detail_sku.html" class="glanz_footer_link">Ver comparativa de planes</a></p>
+            </div>
+
+            <div class="u-margin-top-5">
+              <p class="u-text-style-small u-weight-bold u-margin-bottom-2">Pago seguro</p>
+              <p class="u-text-style-small" style="opacity: 0.6;">Transacciones procesadas por PayPal (cifrado SSL). Glanz nunca recibe ni almacena datos de tarjeta.</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="glanz_footer" role="contentinfo">
+    <div class="u-section">
+      <div class="u-container-full">
+        <div class="glanz_footer_top">
+          <div>
+            <a href="index.html" aria-label="Glanz — inicio"><img src="assets/logo.svg" alt="Glanz" width="80" height="26" loading="lazy"></a>
+            <p class="u-text-style-small u-margin-top-4" style="opacity: 0.7; max-width: 22rem; line-height: 1.6;">Inmobiliaria boutique · Madrid.<br>Calle de Serrano 00, 28001.<br>L–V 10:00–19:00.</p>
+          </div>
+          <div>
+            <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-3" style="opacity: 0.5;">Navegar</p>
+            <nav class="glanz_footer_links" aria-label="Navegación del pie">
+              <a href="inmuebles.html" class="glanz_footer_link u-text-style-small">Inmuebles</a>
+              <a href="detail_distritos.html" class="glanz_footer_link u-text-style-small">Distritos</a>
+              <a href="boutique-inmobiliaria.html" class="glanz_footer_link u-text-style-small">Boutique</a>
+              <a href="club-glanz.html" class="glanz_footer_link u-text-style-small">Club Glanz</a>
+              <a href="lujo-en-madrid.html" class="glanz_footer_link u-text-style-small">Editorial</a>
+            </nav>
+          </div>
+          <div>
+            <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-3" style="opacity: 0.5;">Legal</p>
+            <nav class="glanz_footer_links" aria-label="Legal">
+              <a href="politicas.html#aviso-legal" class="glanz_footer_link u-text-style-small">Aviso legal</a>
+              <a href="politicas.html#privacidad" class="glanz_footer_link u-text-style-small">Privacidad</a>
+              <a href="politicas.html#cookies" class="glanz_footer_link u-text-style-small">Cookies</a>
+              <a href="politicas.html#terminos-uso" class="glanz_footer_link u-text-style-small">Términos de uso</a>
+            </nav>
+          </div>
+          <div>
+            <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-3" style="opacity: 0.5;">Ayuda</p>
+            <nav class="glanz_footer_links" aria-label="Ayuda">
+              <a href="mailto:hola@glanz.es" class="glanz_footer_link u-text-style-small">hola@glanz.es</a>
+              <a href="tel:+34910000000" class="glanz_footer_link u-text-style-small">+34 910 000 000</a>
+            </nav>
+          </div>
+        </div>
+        <div class="glanz_footer_bottom">
+          <span class="u-text-style-small">© 2026 Glanz · Todos los derechos reservados</span>
+          <div class="glanz_footer_bottom_links">
+            <a href="politicas.html#aviso-legal" class="glanz_footer_bottom_link u-text-style-small">Políticas</a>
+            <a href="politicas.html#cookies" class="glanz_footer_bottom_link u-text-style-small">Cookies</a>
+          </div>
+          <span class="u-text-style-small">Diseño por Van Alva</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Referencia de Modales · Dev Reference | Glanz</title>
+  <meta name="description" content="Referencia de desarrollo: todos los patrones de modales utilizados en el sitio Glanz. Menú móvil, modal de contacto, modal de solicitud de visita.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="css/variables.css" rel="stylesheet" type="text/css">
+  <link href="css/framework.css" rel="stylesheet" type="text/css">
+  <link href="css/project.css" rel="stylesheet" type="text/css">
+</head>
+<body class="u-theme-light">
+<a href="#main-content" class="u-sr-only">Ir al contenido principal</a>
+
+<div class="page_wrap">
+
+    <div class="glanz_nav">
+    <header class="glanz_landing_top">
+      <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
+        <img src="assets/logo.svg" alt="Glanz Logo">
+      </a>
+      <nav class="glanz_landing_nav" aria-label="Navegación principal">
+        <div class="glanz_landing_nav_links">
+          <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
+          <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
+          <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
+          <a href="lujo-en-madrid.html" class="glanz_landing_nav_link">Editorial</a>
+        </div>
+        <button type="button" class="glanz_landing_nav_burger" aria-label="Abrir menú">
+          <span class="glanz_burger_bar"></span>
+          <span class="glanz_burger_bar"></span>
+        </button>
+      </nav>
+    </header>
+  </div>
+
+  <main id="main-content" role="main" class="glanz_page_main">
+
+    <section class="u-section">
+      <div class="u-container-full">
+        <div class="glanz_eyebrow_chip u-margin-bottom-4">
+          <span class="u-text-style-small u-text-transform-uppercase">Dev Reference · No publicar</span>
+        </div>
+        <h1 class="u-text-style-h2">Referencia de modales</h1>
+        <p class="u-text-style-main u-margin-top-3" style="max-width: 44rem; color: color-mix(in srgb, var(--_theme---text) 70%, transparent);">Esta página contiene los patrones HTML de todos los modales del sitio Glanz. Es una referencia de desarrollo para uso interno — no está vinculada desde la navegación del sitio.</p>
+      </div>
+    </section>
+
+    <!-- ── MODAL 1: MENÚ MÓVIL ─────────────────────────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-4" style="opacity: 0.5;">01 · Menú móvil (hamburger)</p>
+
+        <div class="glanz_pd_chip_item u-margin-bottom-4">
+          <span class="glanz_pd_spec_label">Clases principales</span>
+          <span class="u-text-style-small">glanz_mobile_menu · glanz_mobile_menu_inner · glanz_mobile_menu_links · glanz_mobile_menu_link · glanz_mobile_menu_actions</span>
+        </div>
+
+        <!-- Renderizado estático del modal -->
+        <div class="glanz_modal_preview" style="position: relative; max-width: 26rem; background-color: var(--_theme---background); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: var(--_theme---border); border-right-color: var(--_theme---border); border-bottom-color: var(--_theme---border); border-left-color: var(--_theme---border); border-top-left-radius: 0.75rem; border-top-right-radius: 0.75rem; border-bottom-left-radius: 0.75rem; border-bottom-right-radius: 0.75rem; padding-top: 2rem; padding-bottom: 2rem; padding-left: 1.5rem; padding-right: 1.5rem;">
+          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <img src="assets/logo.svg" alt="Glanz" width="72" height="24" loading="lazy">
+            <button type="button" aria-label="Cerrar menú" class="glanz_nav_action_outline" style="padding-top: 0.375rem; padding-bottom: 0.375rem; padding-left: 0.75rem; padding-right: 0.75rem;">✕</button>
+          </div>
+          <nav aria-label="Menú de navegación móvil">
+            <a href="inmuebles.html" class="glanz_footer_link u-text-style-h5" style="display: block; padding-top: 0.75rem; padding-bottom: 0.75rem; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: var(--_theme---border);">Inmuebles</a>
+            <a href="detail_distritos.html" class="glanz_footer_link u-text-style-h5" style="display: block; padding-top: 0.75rem; padding-bottom: 0.75rem; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: var(--_theme---border);">Distritos</a>
+            <a href="detail_tipo-de-busqueda.html" class="glanz_footer_link u-text-style-h5" style="display: block; padding-top: 0.75rem; padding-bottom: 0.75rem; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: var(--_theme---border);">Servicios</a>
+            <a href="boutique-inmobiliaria.html" class="glanz_footer_link u-text-style-h5" style="display: block; padding-top: 0.75rem; padding-bottom: 0.75rem; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: var(--_theme---border);">Boutique</a>
+            <a href="lujo-en-madrid.html" class="glanz_footer_link u-text-style-h5" style="display: block; padding-top: 0.75rem; padding-bottom: 0.75rem;">Editorial</a>
+          </nav>
+          <div style="display: flex; flex-direction: column; row-gap: 0.75rem; margin-top: 1.5rem;">
+            <a href="vender-piso-madrid.html" class="glanz_nav_action_outline" style="justify-content: center;">Vender piso</a>
+            <a href="contacto.html" class="glanz_nav_action_filled" style="justify-content: center;">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MODAL 2: CONTACTO ────────────────────────────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-4" style="opacity: 0.5;">02 · Modal de contacto genérico</p>
+
+        <div class="glanz_pd_chip_item u-margin-bottom-4">
+          <span class="glanz_pd_spec_label">Clases principales</span>
+          <span class="u-text-style-small">glanz_modal · glanz_modal_overlay · glanz_modal_box · glanz_modal_header · glanz_modal_body · glanz_modal_close</span>
+        </div>
+
+        <div class="glanz_modal_preview" style="max-width: 36rem; background-color: var(--_theme---background); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: var(--_theme---border); border-right-color: var(--_theme---border); border-bottom-color: var(--_theme---border); border-left-color: var(--_theme---border); border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; padding-top: 2rem; padding-bottom: 2rem; padding-left: 2rem; padding-right: 2rem;">
+          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+            <div>
+              <h2 class="u-text-style-h5">Solicitar información</h2>
+              <p class="u-text-style-small u-margin-top-1" style="opacity: 0.6;">Un asesor le contactará en menos de 24 h.</p>
+            </div>
+            <button type="button" aria-label="Cerrar" class="glanz_nav_action_outline" style="padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.625rem; padding-right: 0.625rem; flex-shrink: 0;">✕</button>
+          </div>
+          <form>
+            <div class="glanz_form_field">
+              <label class="glanz_form_label u-text-style-small" for="modal-nombre">Nombre</label>
+              <input type="text" id="modal-nombre" name="nombre" class="glanz_input u-text-style-small" placeholder="Su nombre">
+            </div>
+            <div class="glanz_form_field u-margin-top-3">
+              <label class="glanz_form_label u-text-style-small" for="modal-email">Correo electrónico</label>
+              <input type="email" id="modal-email" name="email" class="glanz_input u-text-style-small" placeholder="correo@ejemplo.es">
+            </div>
+            <div class="glanz_form_field u-margin-top-3">
+              <label class="glanz_form_label u-text-style-small" for="modal-telefono">Teléfono</label>
+              <input type="tel" id="modal-telefono" name="telefono" class="glanz_input u-text-style-small" placeholder="+34 600 000 000">
+            </div>
+            <div class="glanz_form_field u-margin-top-3">
+              <label class="glanz_form_label u-text-style-small" for="modal-mensaje">Mensaje (opcional)</label>
+              <textarea id="modal-mensaje" name="mensaje" class="glanz_textarea u-text-style-small" rows="2" placeholder="Cuéntenos lo que busca…"></textarea>
+            </div>
+            <button type="submit" class="glanz_nav_action_filled u-margin-top-4" style="width: 100%; justify-content: center;">Enviar solicitud</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MODAL 3: SOLICITUD DE VISITA ────────────────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight u-margin-bottom-4" style="opacity: 0.5;">03 · Modal de solicitud de visita a inmueble</p>
+
+        <div class="glanz_modal_preview" style="max-width: 36rem; background-color: var(--_theme---background); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: var(--_theme---border); border-right-color: var(--_theme---border); border-bottom-color: var(--_theme---border); border-left-color: var(--_theme---border); border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; padding-top: 2rem; padding-bottom: 2rem; padding-left: 2rem; padding-right: 2rem;">
+
+          <!-- Referencia del inmueble -->
+          <div style="display: flex; flex-direction: row; column-gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: var(--_theme---border);">
+            <div class="image_wrap" style="width: 4rem; height: 4rem; border-top-left-radius: 0.375rem; border-top-right-radius: 0.375rem; border-bottom-left-radius: 0.375rem; border-bottom-right-radius: 0.375rem; overflow-x: hidden; overflow-y: hidden; flex-shrink: 0;">
+              <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Residencia Velázquez" class="image_cover" loading="lazy" width="64" height="64">
+            </div>
+            <div>
+              <p class="u-text-style-small u-weight-bold">Residencia Velázquez</p>
+              <p class="u-text-style-small" style="opacity: 0.6;">Velázquez 120 · Salamanca · 3.950.000 €</p>
+              <span class="glanz_tag u-text-style-small u-margin-top-1">GLZ-SAL-2026-0047</span>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-bottom: 1.25rem;">
+            <h2 class="u-text-style-h5">Solicitar visita privada</h2>
+            <button type="button" aria-label="Cerrar" class="glanz_nav_action_outline" style="padding-top: 0.25rem; padding-bottom: 0.25rem; padding-left: 0.625rem; padding-right: 0.625rem; flex-shrink: 0;">✕</button>
+          </div>
+
+          <form>
+            <div class="glanz_form_row">
+              <div class="glanz_form_field">
+                <label class="glanz_form_label u-text-style-small" for="visita-nombre">Nombre</label>
+                <input type="text" id="visita-nombre" name="nombre" class="glanz_input u-text-style-small" placeholder="Juan García">
+              </div>
+              <div class="glanz_form_field">
+                <label class="glanz_form_label u-text-style-small" for="visita-telefono">Teléfono</label>
+                <input type="tel" id="visita-telefono" name="telefono" class="glanz_input u-text-style-small" placeholder="+34 600 000 000">
+              </div>
+            </div>
+            <div class="glanz_form_field u-margin-top-3">
+              <label class="glanz_form_label u-text-style-small" for="visita-fecha">Fecha preferida</label>
+              <input type="date" id="visita-fecha" name="fecha" class="glanz_input u-text-style-small">
+            </div>
+            <div class="glanz_form_field u-margin-top-3">
+              <label class="glanz_form_label u-text-style-small" for="visita-hora">Hora preferida</label>
+              <select id="visita-hora" name="hora" class="glanz_select u-text-style-small">
+                <option>10:00 – 11:00</option>
+                <option>11:00 – 12:00</option>
+                <option>12:00 – 13:00</option>
+                <option>16:00 – 17:00</option>
+                <option>17:00 – 18:00</option>
+                <option>18:00 – 19:00</option>
+              </select>
+            </div>
+            <button type="submit" class="glanz_nav_action_filled u-margin-top-4" style="width: 100%; justify-content: center;">Confirmar solicitud de visita</button>
+            <p class="u-text-style-small u-margin-top-3" style="opacity: 0.55; text-align: center;">Le confirmaremos disponibilidad en menos de 2 horas hábiles.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="glanz_footer" role="contentinfo">
+    <div class="u-section">
+      <div class="u-container-full">
+        <div class="glanz_footer_bottom">
+          <span class="u-text-style-small">© 2026 Glanz · Referencia de desarrollo</span>
+          <div class="glanz_footer_bottom_links">
+            <a href="politicas.html#aviso-legal" class="glanz_footer_bottom_link u-text-style-small">Políticas</a>
+          </div>
+          <span class="u-text-style-small">Diseño por Van Alva</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
