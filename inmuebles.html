@@ -229,6 +229,12 @@
           <!-- Results grid -->
           <div>
 
+            <!-- Hidden text search wired to grid (populated from ?q= URL param) -->
+            <input type="search" class="u-sr-only"
+                   data-flwr-list-field="titulo"
+                   data-flwr-list-list="#glanz-inmuebles-grid"
+                   aria-label="Búsqueda de texto">
+
             <!-- Active filter tags -->
             <div class="glanz_inmuebles_tags" id="glanz-inmuebles-tags">
               <template data-flwr-target="tag-template" data-flwr-list-list="#glanz-inmuebles-grid">
@@ -334,7 +340,7 @@
                 </div>
               </div>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="salamanca" data-tipo="atico" data-habitaciones="4" data-caracteristicas="" data-precio="4850000" data-superficie="340">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="salamanca" data-tipo="atico" data-habitaciones="4" data-titulo="atico serrano salamanca" data-caracteristicas="" data-precio="4850000" data-superficie="340">
                 <a href="detail_inmuebles.html" aria-label="Ver Ático con terraza en Calle de Serrano">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Ático con terraza en Calle de Serrano, Salamanca" class="image_cover" loading="lazy" width="400" height="500">
@@ -352,7 +358,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="recoletos" data-tipo="piso" data-habitaciones="3" data-caracteristicas="" data-precio="2280000" data-superficie="180">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="recoletos" data-tipo="piso" data-habitaciones="3" data-titulo="piso goya recoletos" data-caracteristicas="" data-precio="2280000" data-superficie="180">
                 <a href="detail_inmuebles.html" aria-label="Ver Piso clásico en Calle de Goya">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Piso clásico en Calle de Goya, Recoletos" class="image_cover" loading="lazy" width="400" height="500">
@@ -370,7 +376,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="chamberi" data-tipo="duplex" data-habitaciones="3" data-caracteristicas="" data-precio="1890000" data-superficie="145">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="chamberi" data-tipo="duplex" data-habitaciones="3" data-titulo="duplex fuencarral chamberi" data-caracteristicas="" data-precio="1890000" data-superficie="145">
                 <a href="detail_inmuebles.html" aria-label="Ver Dúplex en Calle de Fuencarral">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Dúplex en Calle de Fuencarral, Chamberí" class="image_cover" loading="lazy" width="400" height="500">
@@ -388,7 +394,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="justicia" data-tipo="loft" data-habitaciones="2" data-caracteristicas="" data-precio="1450000" data-superficie="95">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="justicia" data-tipo="loft" data-habitaciones="2" data-caracteristicas="" data-precio="1450000" data-titulo="loft barquillo justicia" data-superficie="95">
                 <a href="detail_inmuebles.html" aria-label="Ver Loft diáfano en Calle de Barquillo">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-28.jpg" alt="Loft diáfano en Calle de Barquillo, Justicia" class="image_cover" loading="lazy" width="400" height="500">
@@ -406,7 +412,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card glanz_inmuebles_card_wide" data-flwr-list-item data-operacion="compra" data-distrito="chamartin" data-tipo="casa" data-habitaciones="6" data-caracteristicas="garaje" data-precio="8750000" data-superficie="420">
+              <article class="glanz_inmuebles_card glanz_inmuebles_card_wide" data-flwr-list-item data-operacion="compra" data-distrito="chamartin" data-tipo="casa" data-titulo="casa castellana chamartin" data-habitaciones="6" data-caracteristicas="garaje" data-precio="8750000" data-superficie="420">
                 <a href="detail_projects.html" aria-label="Ver Casa unifamiliar junto al Paseo de la Castellana">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/cocina-americana-plano-general.png" alt="Casa unifamiliar junto al Paseo de la Castellana, Chamartín" class="image_cover" loading="lazy" width="700" height="875">
@@ -424,7 +430,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card glanz_inmuebles_card_narrow" data-flwr-list-item data-operacion="compra" data-distrito="almagro" data-tipo="piso" data-habitaciones="4" data-caracteristicas="historico" data-precio="2650000" data-superficie="210">
+              <article class="glanz_inmuebles_card glanz_inmuebles_card_narrow" data-flwr-list-item data-operacion="compra" data-distrito="almagro" data-tipo="piso" data-titulo="piso almagro" data-habitaciones="4" data-caracteristicas="historico" data-precio="2650000" data-superficie="210">
                 <a href="detail_inmuebles.html" aria-label="Ver Piso en Calle de Almagro">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Piso en Calle de Almagro" class="image_cover" loading="lazy" width="500" height="625">
@@ -442,7 +448,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="jeronimos" data-tipo="atico" data-habitaciones="4" data-caracteristicas="terraza" data-precio="6200000" data-superficie="310">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="jeronimos" data-tipo="atico" data-titulo="atico retiro jeronimos" data-habitaciones="4" data-caracteristicas="terraza" data-precio="6200000" data-superficie="310">
                 <a href="detail_inmuebles.html" aria-label="Ver Ático con vistas al Parque del Retiro">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Ático con vistas al Parque del Retiro, Jerónimos" class="image_cover" loading="lazy" width="400" height="500">
@@ -460,7 +466,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="retiro" data-tipo="piso" data-habitaciones="3" data-caracteristicas="" data-precio="3100000" data-superficie="195">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="retiro" data-tipo="piso" data-titulo="piso alfonso retiro" data-habitaciones="3" data-caracteristicas="" data-precio="3100000" data-superficie="195">
                 <a href="detail_inmuebles.html" aria-label="Ver Piso en Calle de Alfonso XII">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Piso en Calle de Alfonso XII, Retiro" class="image_cover" loading="lazy" width="400" height="500">
@@ -478,7 +484,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="salamanca" data-tipo="casa" data-habitaciones="5" data-caracteristicas="" data-precio="7600000" data-superficie="380">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="salamanca" data-tipo="casa" data-titulo="casa velazquez salamanca" data-habitaciones="5" data-caracteristicas="" data-precio="7600000" data-superficie="380">
                 <a href="detail_inmuebles.html" aria-label="Ver Casa adosada en Calle de Velázquez">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-28.jpg" alt="Casa adosada en Calle de Velázquez, Salamanca" class="image_cover" loading="lazy" width="400" height="500">
@@ -496,7 +502,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="chamberi" data-tipo="duplex" data-habitaciones="3" data-caracteristicas="terraza" data-precio="2120000" data-superficie="165">
+              <article class="glanz_inmuebles_card" data-flwr-list-item data-operacion="compra" data-distrito="chamberi" data-tipo="duplex" data-habitaciones="3" data-titulo="duplex fuencarral chamberi" data-caracteristicas="terraza" data-titulo="duplex santa engracia chamberi" data-precio="2120000" data-superficie="165">
                 <a href="detail_inmuebles.html" aria-label="Ver Dúplex en Calle de Santa Engracia">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Dúplex en Calle de Santa Engracia, Chamberí" class="image_cover" loading="lazy" width="400" height="500">
@@ -514,7 +520,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card glanz_inmuebles_card_narrow" data-flwr-list-item data-operacion="compra" data-distrito="justicia" data-tipo="loft" data-habitaciones="2" data-caracteristicas="" data-precio="1720000" data-superficie="110">
+              <article class="glanz_inmuebles_card glanz_inmuebles_card_narrow" data-flwr-list-item data-operacion="compra" data-distrito="justicia" data-tipo="loft" data-habitaciones="2" data-caracteristicas="" data-precio="1720000" data-titulo="loft hortaleza justicia" data-superficie="110">
                 <a href="detail_inmuebles.html" aria-label="Ver Loft en Calle de Hortaleza">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Loft en Calle de Hortaleza, Justicia" class="image_cover" loading="lazy" width="500" height="625">
@@ -532,7 +538,7 @@
                 </div>
               </article>
 
-              <article class="glanz_inmuebles_card glanz_inmuebles_card_wide" data-flwr-list-item data-operacion="obra-nueva" data-distrito="recoletos" data-tipo="piso" data-habitaciones="4" data-caracteristicas="garaje" data-precio="5400000" data-superficie="285">
+              <article class="glanz_inmuebles_card glanz_inmuebles_card_wide" data-flwr-list-item data-operacion="obra-nueva" data-distrito="recoletos" data-tipo="piso" data-habitaciones="4" data-titulo="piso ayala recoletos obra nueva" data-caracteristicas="garaje" data-precio="5400000" data-superficie="285">
                 <a href="detail_inmuebles-obra-nueva.html" aria-label="Ver Piso esquinero en Calle de Ayala">
                   <div class="image_wrap u-ratio-4-5">
                     <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Piso esquinero en Calle de Ayala, Recoletos" class="image_cover" loading="lazy" width="700" height="875">
@@ -707,6 +713,47 @@
 </div>
 
 <script>
+/* ── URL params → filters (from landing search bar) ────── */
+(function () {
+  var params = new URLSearchParams(location.search);
+  if (!params.toString()) return; /* nothing to apply */
+
+  var grid = document.getElementById('glanz-inmuebles-grid');
+  if (!grid) return;
+
+  /* Run after flwr-runtime has initialised (deferred) */
+  setTimeout(function () {
+
+    /* Chip filters: distrito, tipo, hab */
+    ['distrito', 'tipo', 'hab'].forEach(function (param) {
+      var val = params.get(param);
+      if (!val) return;
+      /* map 'hab' param to 'habitaciones' field */
+      var field = param === 'hab' ? 'habitaciones' : param;
+      var chip = document.querySelector(
+        'input[data-flwr-list-field="' + field + '"][data-flwr-list-value="' + val + '"]'
+      );
+      if (chip) {
+        chip.checked = true;
+        chip.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    });
+
+    /* Text search: q param */
+    var q = params.get('q');
+    if (q) {
+      var searchInput = document.querySelector(
+        'input[data-flwr-list-field~="titulo"][data-flwr-list-list="#glanz-inmuebles-grid"]'
+      );
+      if (searchInput) {
+        searchInput.value = q;
+        searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    }
+
+  }, 50);
+})();
+
 /* ── Live results count ─────────────────────────────────── */
 (function () {
   var grid    = document.getElementById('glanz-inmuebles-grid');
