@@ -55,15 +55,15 @@
 
 <div class="page_wrap">
 
-  <div class="glanz_nav">
-    <header class="glanz_landing_top">
+  <header class="glanz_landing_top" data-nav-trigger>
       <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
         <img src="assets/logo.svg" alt="Glanz Logo">
       </a>
       <nav class="glanz_landing_nav" aria-label="Navegación principal">
         <div class="glanz_landing_nav_links">
           <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
-          <a href="inmuebles-exclusivos.html" class="glanz_landing_nav_link">Obra Nueva</a>
+          <a href="obra-nueva.html" class="glanz_landing_nav_link">Obra Nueva</a>
+          <a href="obra-nueva.html" class="glanz_landing_nav_link">Obra Nueva</a>
           <a href="vender-piso-madrid.html" class="glanz_landing_nav_link" aria-current="page">Vende con GLANZ</a>
           <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Hablemos de GLANZ</a>
           <a href="club-glanz.html" class="glanz_landing_nav_link">Club GLANZ</a>
@@ -74,18 +74,30 @@
         </button>
       </nav>
     </header>
-  </div>
 
   <main id="main-content" role="main" class="glanz_page_main">
 
     <!-- ── 01 // HERO ──────────────────────────────── -->
-    <section class="glanz_inner_hero u-theme-dark">
-      <div class="image_wrap glanz_inner_hero_image">
-        <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Vende tu piso con Glanz — Madrid" class="image_cover" loading="eager" fetchpriority="high">
-      </div>
-      <div class="u-container-full glanz_inner_hero_content">
-        <h1 class="u-text-style-display">Vende tu piso<br>con Glanz</h1>
-        <p class="u-text-style-large u-margin-top-4" style="max-width: 42rem;">Una gestión de venta para ser exitosa debe ser profesional, ágil y personalizada. En <a href="index.html" class="glanz_footer_link" style="text-decoration: underline;">Glanz</a>, te acompañamos en cada paso para que logres el mejor resultado posible.</p>
+    <!-- ── 01 // HERO MANIFESTO ────────────────────── -->
+    <section class="u-section">
+      <div class="u-container-full">
+        <p class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight">Venta editorial · Madrid · Glanz</p>
+        <div class="glanz_boutique_manifesto_grid u-margin-top-6">
+          <div>
+            <div class="image_wrap u-ratio-4-5">
+              <img src="assets/[02] Media Bank/Web/Headers/vende-con-glanz-hero.jpg" alt="Vende tu piso con Glanz — Madrid" class="image_cover" loading="eager" width="440" height="550" fetchpriority="high">
+            </div>
+          </div>
+          <div>
+            <h1 class="u-text-style-h2">Vender bien no es vender rápido. Es vender al precio que merece.</h1>
+            <p class="u-text-style-large u-margin-top-4" style="color: color-mix(in srgb, var(--_theme---text) 70%, transparent);">La mayoría de las ventas fracasan por dos motivos: precio mal calibrado y presentación genérica. En Glanz hacemos lo contrario. Cada propiedad se estudia, se fotografía con criterio editorial y se muestra sólo a compradores que encajan.</p>
+            <p class="u-text-style-main u-margin-top-4" style="color: color-mix(in srgb, var(--_theme---text) 65%, transparent);">No gestionamos volumen. Gestionamos atención. Trabajamos con un número limitado de vendedores al año para que cada operación reciba el tiempo y el criterio que necesita para cerrarse bien.</p>
+            <div class="u-flex-horizontal-wrap u-align-items-center u-gap-inline-3 u-margin-top-6">
+              <a href="#valoracion" class="glanz_nav_action_filled">Solicitar valoración</a>
+              <a href="boutique-inmobiliaria.html" class="glanz_nav_action_outline">Conocer Glanz</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -460,5 +472,6 @@ window.addEventListener('load', function () {
 });
 </script>
 
+<script src="js/glanz-nav.js"></script>
 </body>
 </html>

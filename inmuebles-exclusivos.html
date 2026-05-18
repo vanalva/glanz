@@ -78,6 +78,7 @@
         <nav class="glanz_landing_nav" aria-label="Navegación principal">
           <div class="glanz_landing_nav_links">
             <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="obra-nueva.html" class="glanz_landing_nav_link">Obra Nueva</a>
             <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
             <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
             <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
@@ -301,26 +302,49 @@
     </div>
   </footer>
 
-    <form class="glanz_landing_search" method="get" action="search.html" data-sticky-trigger>
+    <form class="glanz_landing_search" method="get" action="inmuebles.html" data-sticky-trigger>
     <label class="glanz_landing_search_field is-search">
       <span class="glanz_landing_search_icon" aria-hidden="true">⌕</span>
       <input type="search" name="q" placeholder="Encuentra tu hogar" aria-label="Buscar" class="glanz_landing_search_input">
     </label>
     <span class="glanz_landing_search_divider" aria-hidden="true"></span>
-    <button type="button" class="glanz_landing_search_field" aria-haspopup="listbox">
-      <span class="glanz_landing_search_label">Distrito</span>
+    <label class="glanz_landing_search_field glanz_landing_search_select_wrap">
+      <select name="distrito" class="glanz_landing_search_select" aria-label="Distrito">
+        <option value="">Distrito</option>
+        <option value="salamanca">Salamanca</option>
+        <option value="recoletos">Recoletos</option>
+        <option value="almagro">Almagro</option>
+        <option value="chamberi">Chamberí</option>
+        <option value="chamartin">Chamartín</option>
+        <option value="retiro">Retiro</option>
+        <option value="justicia">Justicia</option>
+        <option value="jeronimos">Jerónimos</option>
+      </select>
       <span class="glanz_landing_search_chev" aria-hidden="true">▾</span>
-    </button>
+    </label>
     <span class="glanz_landing_search_divider is-collapsable" aria-hidden="true"></span>
-    <button type="button" class="glanz_landing_search_field is-collapsable" aria-haspopup="listbox">
-      <span class="glanz_landing_search_label">Tipo</span>
+    <label class="glanz_landing_search_field glanz_landing_search_select_wrap is-collapsable">
+      <select name="tipo" class="glanz_landing_search_select" aria-label="Tipo">
+        <option value="">Tipo</option>
+        <option value="atico">Ático</option>
+        <option value="piso">Piso</option>
+        <option value="casa">Casa</option>
+        <option value="duplex">Dúplex</option>
+        <option value="loft">Loft</option>
+      </select>
       <span class="glanz_landing_search_chev" aria-hidden="true">▾</span>
-    </button>
+    </label>
     <span class="glanz_landing_search_divider is-collapsable" aria-hidden="true"></span>
-    <button type="button" class="glanz_landing_search_field is-collapsable" aria-haspopup="listbox">
-      <span class="glanz_landing_search_label">Dormitorios</span>
+    <label class="glanz_landing_search_field glanz_landing_search_select_wrap is-collapsable">
+      <select name="hab" class="glanz_landing_search_select" aria-label="Dormitorios">
+        <option value="">Dormitorios</option>
+        <option value="2">2 hab.</option>
+        <option value="3">3 hab.</option>
+        <option value="4">4 hab.</option>
+        <option value="5">5+ hab.</option>
+      </select>
       <span class="glanz_landing_search_chev" aria-hidden="true">▾</span>
-    </button>
+    </label>
     <span class="glanz_landing_search_divider is-collapsable" aria-hidden="true"></span>
     <div class="glanz_landing_search_range is-collapsable">
       <span class="glanz_landing_search_label">Rango</span>
@@ -339,5 +363,6 @@
   </form>
 
 </div>
+<script src="js/glanz-nav.js"></script>
 </body>
 </html>

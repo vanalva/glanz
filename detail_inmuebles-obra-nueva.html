@@ -20,7 +20,7 @@
   <link href="css/framework.css" rel="stylesheet" type="text/css">
   <link href="css/project.css" rel="stylesheet" type="text/css">
 </head>
-<body class="u-theme-light">
+<body class="u-theme-light glanz_page--dark-hero">
 <a href="#main-content" class="u-sr-only">Ir al contenido principal</a>
 
 <script type="application/ld+json">
@@ -58,14 +58,14 @@
 
 <div class="page_wrap">
 
-    <div class="glanz_nav">
-    <header class="glanz_landing_top">
+  <header class="glanz_landing_top" data-nav-trigger>
       <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
         <img src="assets/logo.svg" alt="Glanz Logo">
       </a>
       <nav class="glanz_landing_nav" aria-label="Navegación principal">
         <div class="glanz_landing_nav_links">
           <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="obra-nueva.html" class="glanz_landing_nav_link">Obra Nueva</a>
           <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
           <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
           <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
@@ -77,43 +77,52 @@
         </button>
       </nav>
     </header>
-  </div>
 
   <main id="main-content" role="main" class="glanz_page_main">
 
-    <!-- ── 01 // GALERÍA ─────────────────────────────── -->
-    <section class="u-section">
-      <div class="u-container-full">
-        <div class="glanz_pd_gallery">
-          <div class="glanz_pd_gallery_main">
-            <div class="image_wrap u-ratio-16-9">
-              <img src="assets/[02] Media Bank/Web/Headers/cocina-americana-plano-general.png" alt="Salón principal — Residencia Almagro, Chamberí" class="image_cover" loading="eager" width="1200" height="675" fetchpriority="high">
-            </div>
+    <!-- ── 01 // HERO — homepage landing layout ─────── -->
+    <section class="glanz_landing glanz_hero_forest">
+      <div class="glanz_landing_nav_placeholder" aria-hidden="true"></div>
+
+      <div class="glanz_landing_grid">
+
+        <!-- Left: property headline + specs + CTAs -->
+        <div class="glanz_landing_left">
+          <div class="glanz_landing_eyebrow">
+            <span class="glanz_landing_eyebrow_dash" aria-hidden="true"></span>
+            <span class="u-text-style-small u-text-transform-uppercase u-letter-spacing-tight">Chamberí · Obra nueva · Entrega T4 2026</span>
           </div>
-          <div class="glanz_pd_gallery_thumbs">
-            <div class="glanz_pd_gallery_thumb">
-              <div class="image_wrap u-ratio-3-2">
-                <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Dormitorio principal" class="image_cover" loading="lazy" width="400" height="267">
-              </div>
-            </div>
-            <div class="glanz_pd_gallery_thumb">
-              <div class="image_wrap u-ratio-3-2">
-                <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Baño principal" class="image_cover" loading="lazy" width="400" height="267">
-              </div>
-            </div>
-            <div class="glanz_pd_gallery_thumb">
-              <div class="image_wrap u-ratio-3-2">
-                <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Galería" class="image_cover" loading="lazy" width="400" height="267">
-              </div>
-            </div>
+
+          <h1 class="glanz_landing_headline u-text-style-display">
+            Residencia<br>
+            <em class="glanz_landing_headline_em">Almagro.</em>
+          </h1>
+
+          <p class="glanz_landing_lede u-text-style-main">
+            165 m² de nueva construcción en Chamberí. Certificación energética A, tres dormitorios, tres baños y acabados de primera línea. Única unidad disponible.
+          </p>
+
+          <div class="u-flex-horizontal-wrap u-align-items-baseline u-gap-inline-3 u-margin-top-5">
+            <p class="u-text-style-h3" style="font-weight: 300;">1.950.000 €</p>
+            <span class="u-text-style-small" style="opacity: 0.65;">11.818 €/m²</span>
           </div>
-          <div class="glanz_pd_gallery_overlay">
-            <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Chamberí</span>
-            <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Obra Nueva</span>
-            <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Cert. A</span>
-            <button type="button" class="glanz_nav_action_outline" style="background-color: var(--_theme---background-2);">Ver todas las fotos (18)</button>
+
+          <div class="u-flex-horizontal-nowrap u-align-items-center u-gap-inline-3 u-margin-top-5">
+            <a href="#dossier" class="glanz_nav_action_filled">Solicitar dossier</a>
+            <a href="#visita" class="glanz_nav_action_outline">Reservar visita</a>
           </div>
         </div>
+
+        <!-- Right: hero image -->
+        <div class="glanz_landing_right">
+          <div class="glanz_landing_image_wrap">
+            <img src="assets/[02] Media Bank/Web/Headers/cocina-americana-plano-general.png"
+                 alt="Residencia Almagro — Salón principal"
+                 class="glanz_landing_image"
+                 loading="eager" fetchpriority="high" width="1200" height="900">
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -357,5 +366,6 @@
     </button>
   </form>
 
+<script src="js/glanz-nav.js"></script>
 </body>
 </html>

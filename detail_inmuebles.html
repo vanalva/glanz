@@ -64,14 +64,14 @@
 
 <div class="page_wrap">
 
-    <div class="glanz_nav">
-    <header class="glanz_landing_top">
+  <header class="glanz_landing_top" data-nav-trigger>
       <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
         <img src="assets/logo.svg" alt="Glanz Logo">
       </a>
       <nav class="glanz_landing_nav" aria-label="Navegación principal">
         <div class="glanz_landing_nav_links">
           <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="obra-nueva.html" class="glanz_landing_nav_link">Obra Nueva</a>
           <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
           <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
           <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
@@ -83,7 +83,6 @@
         </button>
       </nav>
     </header>
-  </div>
 
   <main id="main-content" role="main" class="glanz_page_main">
 
@@ -91,39 +90,51 @@
     <section class="u-section">
       <div class="u-container-full">
         <div class="glanz_pd_gallery">
-          <div class="glanz_pd_gallery_main">
-            <div class="image_wrap u-ratio-16-9">
-              <img src="assets/[02] Media Bank/Web/Headers/cocina-americana-plano-general.png" alt="Salón principal — Residencia Velázquez, Salamanca" class="image_cover" loading="eager" width="1200" height="675" fetchpriority="high">
+
+          <!-- LEFT: hero image + tags below -->
+          <div class="glanz_pd_gallery_left">
+            <div class="glanz_pd_gallery_main">
+              <div class="image_wrap u-ratio-5-4">
+                <img src="assets/[02] Media Bank/Web/Headers/cocina-americana-plano-general.png" alt="Salón principal — Residencia Velázquez, Salamanca" class="image_cover" loading="eager" width="1200" height="960" fetchpriority="high">
+              </div>
+            </div>
+            <div class="glanz_pd_gallery_meta">
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Salamanca</span>
+              <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Ático</span>
+              <button type="button" class="glanz_nav_action_outline glanz_pd_gallery_cta">Ver todas las fotos (12)</button>
             </div>
           </div>
-          <div class="glanz_pd_gallery_thumbs">
+
+          <!-- RIGHT: masonry gallery -->
+          <div class="glanz_pd_gallery_masonry">
             <div class="glanz_pd_gallery_thumb">
-              <div class="image_wrap u-ratio-3-2">
-                <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Dormitorio principal" class="image_cover" loading="lazy" width="400" height="267">
+              <div class="image_wrap u-ratio-5-4">
+                <img src="assets/[02] Media Bank/Web/Headers/hero-35.jpg" alt="Dormitorio principal" class="image_cover" loading="lazy" width="600" height="450">
               </div>
             </div>
             <div class="glanz_pd_gallery_thumb">
-              <div class="image_wrap u-ratio-3-2">
-                <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Terraza con vistas" class="image_cover" loading="lazy" width="400" height="267">
+              <div class="image_wrap u-ratio-5-4">
+                <img src="assets/[02] Media Bank/Web/Headers/hero-12.jpg" alt="Terraza con vistas" class="image_cover" loading="lazy" width="600" height="450">
               </div>
             </div>
             <div class="glanz_pd_gallery_thumb">
-              <div class="image_wrap u-ratio-3-2">
-                <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Cocina" class="image_cover" loading="lazy" width="400" height="267">
+              <div class="image_wrap u-ratio-5-4">
+                <img src="assets/[02] Media Bank/Web/Headers/hero-7.jpg" alt="Cocina" class="image_cover" loading="lazy" width="600" height="450">
+              </div>
+            </div>
+            <div class="glanz_pd_gallery_thumb">
+              <div class="image_wrap u-ratio-5-4">
+                <img src="assets/[02] Media Bank/Web/Headers/hero-28.jpg" alt="Baño principal" class="image_cover" loading="lazy" width="600" height="450">
               </div>
             </div>
           </div>
-          <div class="glanz_pd_gallery_overlay">
-            <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Salamanca</span>
-            <span class="glanz_tag u-text-style-small u-text-transform-uppercase">Ático</span>
-            <button type="button" class="glanz_nav_action_outline" style="background-color: var(--_theme---background-2);">Ver todas las fotos (12)</button>
-          </div>
+
         </div>
       </div>
     </section>
 
     <!-- ── 02 // BANDA RESUMEN ────────────────────── -->
-    <section class="u-section">
+    <section class="u-section" style="padding-top: var(--_spacing---space--6)">
       <div class="u-container-full">
         <div class="glanz_section_header">
           <div class="glanz_property_meta">
@@ -489,5 +500,6 @@
   </form>
 
 </div>
+<script src="js/glanz-nav.js"></script>
 </body>
 </html>

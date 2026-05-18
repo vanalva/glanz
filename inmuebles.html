@@ -58,14 +58,15 @@
 <div class="page_wrap">
 
   <!-- ── NAV ─────────────────────────────────────────── -->
-    <div class="glanz_nav">
-    <header class="glanz_landing_top">
+
+  <header class="glanz_landing_top" data-nav-trigger>
       <a href="index.html" class="glanz_landing_logo" aria-label="Glanz — inicio">
         <img src="assets/logo.svg" alt="Glanz Logo">
       </a>
       <nav class="glanz_landing_nav" aria-label="Navegación principal">
         <div class="glanz_landing_nav_links">
           <a href="inmuebles.html" class="glanz_landing_nav_link">Inmuebles</a>
+          <a href="obra-nueva.html" class="glanz_landing_nav_link">Obra Nueva</a>
           <a href="detail_distritos.html" class="glanz_landing_nav_link">Distritos</a>
           <a href="detail_tipo-de-busqueda.html" class="glanz_landing_nav_link">Servicios</a>
           <a href="boutique-inmobiliaria.html" class="glanz_landing_nav_link">Boutique</a>
@@ -77,7 +78,6 @@
         </button>
       </nav>
     </header>
-  </div>
 
   <!-- ── MAIN ─────────────────────────────────────────── -->
   <main id="main-content" role="main" class="glanz_page_main">
@@ -243,8 +243,10 @@
                   <button class="glanz_filter_tag_remove" data-flwr-target="tag-remove" aria-label="Quitar filtro">×</button>
                 </span>
               </template>
-              <div data-flwr-target="tags" data-flwr-list-list="#glanz-inmuebles-grid" class="glanz_inmuebles_tags_row"></div>
-              <button type="button" class="glanz_filter_tag_clear" data-flwr-target="clear" data-flwr-list-list="#glanz-inmuebles-grid" style="display:none">Limpiar todo</button>
+              <div class="glanz_inmuebles_tags_row">
+                <button type="button" class="glanz_filter_tag_clear" data-flwr-target="clear" data-flwr-list-list="#glanz-inmuebles-grid">Limpiar todo</button>
+                <div data-flwr-target="tags" data-flwr-list-list="#glanz-inmuebles-grid" class="glanz_inmuebles_active_tags"></div>
+              </div>
             </div>
 
             <!-- Results toolbar: count · sort · view toggle -->
@@ -672,8 +674,8 @@
     </div>
   </footer>
 
-  <!-- ── SEARCH DOCK ────────────────────────────────────── -->
-    <form class="glanz_landing_search" method="get" action="search.html" data-sticky-trigger>
+  <!-- search dock: landing page only, omitted here -->
+    <form class="glanz_landing_search" style="display:none" aria-hidden="true">
     <label class="glanz_landing_search_field is-search">
       <span class="glanz_landing_search_icon" aria-hidden="true">⌕</span>
       <input type="search" name="q" placeholder="Encuentra tu hogar" aria-label="Buscar" class="glanz_landing_search_input">
@@ -721,11 +723,15 @@
   var grid = document.getElementById('glanz-inmuebles-grid');
   if (!grid) return;
 
-  /* Run after flwr-runtime has initialised (deferred) */
-  setTimeout(function () {
+  /* Run after flwr-runtime has initialised — wait for first filter event
+     or fall back after 600ms */
+  var applied = false;
+  function applyParams() {
+    if (applied) return;
+    applied = true;
 
-    /* Chip filters: distrito, tipo, hab */
-    ['distrito', 'tipo', 'hab'].forEach(function (param) {
+    /* Chip filters: operacion, distrito, tipo, hab */
+    ['operacion', 'distrito', 'tipo', 'hab'].forEach(function (param) {
       var val = params.get(param);
       if (!val) return;
       /* map 'hab' param to 'habitaciones' field */
@@ -750,8 +756,14 @@
         searchInput.dispatchEvent(new Event('input', { bubbles: true }));
       }
     }
+  }
 
-  }, 50);
+  /* Try immediately after flwr fires its first event, fall back at 600ms */
+  var grid = document.getElementById('glanz-inmuebles-grid');
+  if (grid) {
+    grid.addEventListener('flwr:list:filtered', applyParams, { once: true });
+  }
+  setTimeout(applyParams, 600);
 })();
 
 /* ── Live results count ─────────────────────────────────── */
@@ -823,9 +835,9 @@
   });
 })();
 
-/* ── Show/hide "Limpiar todo" with the tags row ── */
+/* ── Show/hide "Limpiar todo" with active filters ── */
 (function () {
-  var grid   = document.getElementById('glanz-inmuebles-grid');
+  var grid     = document.getElementById('glanz-inmuebles-grid');
   var clearBtn = document.querySelector('.glanz_filter_tag_clear');
   if (!grid || !clearBtn) return;
   grid.addEventListener('flwr:list:filtered', function (e) {
@@ -877,5 +889,6 @@
   }, DELAY);
 })();
 </script>
+<script src="js/glanz-nav.js"></script>
 </body>
 </html>
