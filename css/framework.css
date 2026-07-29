@@ -34,7 +34,7 @@ ul, ol { list-style-type: none; padding: 0; margin: 0; }
     font-size: clamp(4rem, 7cqi, 7rem);
     line-height: 1.2;
     letter-spacing: -0.03em;
-    text-transform: capitalize;
+    text-transform: none;
     text-wrap: balance;
 }
 .u-text-style-h1 {
@@ -43,7 +43,7 @@ ul, ol { list-style-type: none; padding: 0; margin: 0; }
     font-size: clamp(3rem, 5cqi, 5rem);
     line-height: 1.2;
     letter-spacing: -0.03em;
-    text-transform: capitalize;
+    text-transform: none;
     text-wrap: balance;
 }
 .u-text-style-h2 {
@@ -52,7 +52,7 @@ ul, ol { list-style-type: none; padding: 0; margin: 0; }
     font-size: clamp(2.5rem, 4cqi, 4rem);
     line-height: 1.2;
     letter-spacing: -0.02em;
-    text-transform: capitalize;
+    text-transform: none;
     text-wrap: balance;
 }
 .u-text-style-h3 {
